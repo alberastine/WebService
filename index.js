@@ -1,9 +1,10 @@
 const express = require('express');
+const cors = require('cors');
+const { profile } = require('console');
 const app = express();
 const port = 3000;
 
 // routes 
-app.get('/', (req, res) => {
     const resume = {
         Personal_Information: [
             {
@@ -48,7 +49,7 @@ app.get('/', (req, res) => {
         ],  
 
     };
-    res.send(resume);
-});
+app.use(cors());
+app.get('/', (req, res) => res.json(resume));
 
 app.listen(port, () => {console.log(`Server Running on port ${port}!`)});
