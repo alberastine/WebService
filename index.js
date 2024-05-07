@@ -33,12 +33,28 @@ const resume = {
       Institution: "University of XYZ",
       Year: "2017-2021",
     },
+    {
+      Degree: "3rd degree",
+      Institution: "Apas National High School",
+      Year: "2013-2011",
+    },
+    {
+      Degree: "5rd degree",
+      Institution: "Kamongay National High School",
+      Year: "2004-2006",
+    },
+
   ],
   Personal_References: [
     {
       Name: "John Doe",
       Contact_No: "1234567890",
       Relationship: "Friend",
+    },
+    {
+      Name: "Low gear",
+      Contact_No: "X",
+      Relationship: "BFF",
     },
   ],
   Work_Experience: [
